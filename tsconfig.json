@@ -6,6 +6,9 @@
       "outDir": "dist",
       "noUnusedLocals": false,
       "lib": ["DOM"],
+      "jsx": "react-jsx",
+      "allowJs": true,
+      "strict": true
   },
   "include": [
       "./**/*.ts",
