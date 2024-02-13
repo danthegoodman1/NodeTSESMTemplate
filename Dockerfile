@@ -29,7 +29,6 @@ RUN npm run build
 FROM base AS release
 COPY --from=install /temp/prod/node_modules node_modules
 COPY --from=prerelease /app/dist ./dist
-COPY ./src/proxies.csv /app/dist/proxies.csv
 COPY ./package.json /app/
 
 ENTRYPOINT ["node", "dist/index.js"]
